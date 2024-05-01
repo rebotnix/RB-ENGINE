@@ -66,10 +66,149 @@ To offer our own hardware and better place for sharing our ideas with new and ex
 
 We offer a free standard version, a hardware-encrypted version and an enterprise version. All functions are included in the free standard version, but hardware encryption is only supported on hardware is only supported on hardware-certified devices and the storage license server is only available in the enterprise version.
 
+| Feature                     | RB-Engine | RB-Engine Enterprise | Nodejs  
+| --------------------------  | --------- | -------------------- | ------- 
+| Memory license server       | NO        | YES                  | NO
+| symmetric encryption        | YES       | YES                  | NO
+| App packager                | YES       | YES                  | YES
+| App Encryptor               | YES       | YES                  | NO
+| Hardware encryption         | NO        | YES                  | NO
+| Static Binary               | YES       | YES                  | NO
+| Opensource                  | YES       | YES                  | YES
+| Quantum qiskit support      | NO        | YES                  | NO
+| COMMONJS & ESM & TYPESCRIPT | NO        | YES                  | NO
+| INJECT DEBUG (-inspect)     | NO        | NO                   | YES
+| BINDINGS FOR PY | JS        | YES       | NO                   | YES
 
-| Feature                | RB-Engine   | RB-Engine Enterprise | Nodejs  
-| ---------------------- | ----------- | -------------------  | ------- 
-| memory license server  | NO          | YES                  | NO
+# Symmetric encryption
+
+RB-Engine uses symmetric AES de-cryption and an encryption method.  
+
+![image](https://github.com/rebotnix/RB-Engine/assets/566761/ece008f6-8441-474c-8868-3bd00d3ebca4)
+
+# Is it breakable?
+Yes, every symmetric encryption is breakable. To break the encryption in RB-Engine, you need to debug and disassemble and extract the master keys. To add your own keys and other methods, you will need to re-compile and develop your strategy into the engine and encyptor.
+
+![image](https://github.com/rebotnix/RB-Engine/assets/566761/2ef709d8-a092-4b7c-b63b-e8436ad9c91a)
+
+#Note 
+
+This project demonstrates the capabilities of the RB-Engine with built in encryption and decryption. Encryption and security can be a very complex topic, and if you are not sure about to use these tools, please contact us to get support.
+
+Nodejs itself does not support anything in this area at the moment. There are several programs that allow you to pack a single Nodejs into tons of pkg files, ending up with not a single and compact firmware, which is our focus with this research project. If you need stronger encryption method, we offer hardware crypto chip solutions on our carrier boards as well with our memory license server you can inject on the file the required applications from an 2 factor services. This required an enterprise license.
+
+GUSTAV I3 and I7 with hardware encryption support.
+
+# App packager
+The File Packager is an MIT-based OpenSource application that allows you to pack your entire Nodejs application(s) into a single file. It does not yet use the file encryption method and we have no plans to add an encrypted version to this module.
+To see the options, execute it (please note that rb_engine has added the version in its file name)
+a) Go into the production folder and execute the package help dialog.
+	./rb_engine packager/dist/ncc/cli.js -h
+	Response:
+	Usage: ncc <cmd> <opts>
+Commands:
+ 		build <input-file> [opts]
+run <input-file> [opts]
+  		cache clean|dir|size
+  		help
+  		version
+Usage:
+First you develop your nodejs application as before. You also can use the rb_engine to execute your developer code or the required nodejs version. 
+
+**Example:**
+Let us create a hello world simple js app.
+let hello = “hello rb-engine”
+console.log(hello)
+
+Save this as file as hellow.js and try to execute this file with:
+Output is
+./rb_engine  hellow.js
+hello rb-engine
+
+Now pack this hellow.js to a single application with the file packager:
+ ./rb_engine packager/dist/ncc/cli.js build hello.js -o dist_hellow
+
+The rb_engine generate an distribution folder dist_hellow
+
+You can test the packing code with:
+./rb_engine dist_hellow/hello.js
+
+# App encryptor
+To use the file encryptor, it is necessary that you before have packed the file with the file packager to one single file. 
+
+Now to encrypt and generate an img file,  you can execute (execute it from the production folder)
+
+./rb_engine encryptor encryptor/encryptor.img dist_hellow/index.js dist_hellow/index.img
+
+To execute the created image, you can now use the rb_engine to execute the file.
+
+../rb_engine dist_hellow/index.img
+
+When you open the index.img you see that this file is now encrypted as a single image container.
+	cat dist_hellow/index.img
+  JJlumcATabMo/OPAg5aJz7QeqnHNvHbxnjWog0XdFBogG…..
+
+# Hardware Encryption and signature (enterprise level yet):
+RB-Engine in combination with GUSTAV-I3 and I7 support another encryption level that supports hardware crypto chips that we installed on the carrier board. In combination with the embedded GPU and the hardware crypto chip, you can sign application per device and bind every application to it.
+
+![image](https://github.com/rebotnix/RB-Engine/assets/566761/09044690-99f3-44ad-982c-023186beebb1)
+
+# In memory license server (only for enterprise)
+You can use this feature to load an encrypted nodejs-based application that you have previously packed with the File Packager. 
+The signature of the file contains different types of challenge response codes and data pipelines. The pipelines to receive a challenge response code are e-mail, SMS and VPN (virtual private network) support. The storage support can load and inject signed code or a key file to open the boot image. The file is transferred exclusively via secure https. The storage license server is a REBOTNIX Enterprise product that you do not necessarily need to create and run your own application.
+Technical environment 
+The first version of rb_engine_a64_tegra_5.10.120 supports the ARM64 architecture, based on Linux ubuntu 22.xx or higher.
+The system requirements:
+Linux 5.10.120-tegra #1 SMP PREEMPT Tue Aug 1 12:32:50 PDT 2023 aarch64 GNU/Linux
+NVIDIA Jetson Orin AGX 32 oder 64 GB
+Jetson Orin NX with Linux 5.1.20.120 will tested soon
+
+
+# Applications
+
+**Web Server**
+**Real-Time Communication**
+**API Middleware**
+**Internet of Things (IoT)**
+**Data Processing and Streaming**
+**Desktop Applications**
+**Microservices Architecture**
+**Serverless Computing**
+**DevOps**
+**Data Science and Machine Learning**
+**Blockchain Development**
+**Voice Assistant Applications**
+**Gaming Applications**
+
+
+#Requirements:
+RB-Engine was developed as a static binary, you can execute it directly form one folder. The compiled binary supports
+only ARCH64 (ARM) 
+
+**Make sure that you have the right linux kernel for your jetson device, that is 5.10.120.** 
+
+You can check this with the command
+uname -a
+
+**Supported jetson linux kernels **
+
+**Linux gustavagx64 5.10.120-tegra #1 SMP PREEMPT Tue Aug 1 12:32:50 PDT 2023 aarch64 aarch64 aarch64 GNU/Linux**
+
+Note:
+If you do not use kernel 5.10.120 or higher, you will get an GLIB-C error, cause this kernel is just to old.
+
+# Examples
+Please take a look at the example folder to start some demos.
+
+
+
+
+
+
+
+
+
+
 
 
 
