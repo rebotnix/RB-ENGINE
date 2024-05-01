@@ -162,7 +162,7 @@ When you open the index.img you see that this file is now encrypted as a single 
 RB-Engine in combination with GUSTAV-I3 and I7 support another encryption level that supports hardware crypto chips that we installed on the carrier board. In combination with the embedded GPU and the hardware crypto chip, you can sign application per device and bind every application to it.
 
 <p align="center">
-<a href="https://rebotnix.com"><img src="https://github.com/rebotnix/RB-Engine/assets/566761/7d64f926-f0ce-4b26-bb46-00e7f3519a56"/></a>
+<a href="https://rebotnix.com" _target="_blank" ><img src="https://github.com/rebotnix/RB-Engine/assets/566761/7d64f926-f0ce-4b26-bb46-00e7f3519a56"/></a>
 </p>
 
 # In memory license server (only for enterprise)
