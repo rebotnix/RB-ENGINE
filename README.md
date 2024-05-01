@@ -223,7 +223,7 @@ If you do not use kernel 5.10.120 or higher, you will get an GLIB-C error, cause
 Please take a look at the example folder to start some demos.
 
 # Download
-Please go to the release section and download the binary package.
+Please go to the release section and download the binary package. <a href="https://github.com/rebotnix/RB-Engine/releases" target="_blank">Download</a>
 
 # Sourcecode
 We will release the full source code by end of june 2024.
