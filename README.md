@@ -212,7 +212,7 @@ only ARCH64 (ARM)
 You can check this with the command
 uname -a
 
-**Supported jetson linux kernels **
+**Supported jetson linux kernels**
 
 **Linux gustavagx64 5.10.120-tegra #1 SMP PREEMPT Tue Aug 1 12:32:50 PDT 2023 aarch64 aarch64 aarch64 GNU/Linux**
 
