@@ -231,6 +231,13 @@ We will release the full source code by end of june 2024.
 # License
 MIT, see license.txt
 
+# Where to meet? 
+
+This project was also created for the jetson-ai-lab, a research group of developers from all over the world. You are cordially invited to join and participate. <a href="https://www.jetson-ai-lab.com/research.html" target="_blank">Link</a>
+
+![image](https://github.com/rebotnix/RB-Engine/assets/566761/3415b420-868f-4ebf-949b-70a74d754de0) 
+
+
 # Disclaimer
 
 Please note that any support provided through this platform, text, upload packages, data loss, including but not limited to technical support, advice and guidance, is provided without warranties or guarantees of any kind, either express or implied.
