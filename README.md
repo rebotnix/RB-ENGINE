@@ -75,16 +75,16 @@ We offer a free standard version, a hardware-encrypted version and an enterprise
 | Feature                     | RB-Engine | RB-Engine Enterprise | Nodejs  
 | --------------------------  | --------- | -------------------- | ------- 
 | Memory license server       | NO        | YES                  | NO
-| symmetric encryption        | YES       | YES                  | NO
+| Symmetric encryption        | YES       | YES                  | NO
 | App packager                | YES       | YES                  | YES
-| App Encryptor               | YES       | YES                  | NO
+| App encryptor               | YES       | YES                  | NO
 | Hardware encryption         | NO        | YES                  | NO
 | Static Binary               | YES       | YES                  | NO
 | Opensource                  | YES       | YES                  | YES
-| Quantum qiskit support      | NO        | YES                  | NO
-| COMMONJS & ESM & TYPESCRIPT | NO        | YES                  | NO
-| INJECT DEBUG (-inspect)     | NO        | NO                   | YES
-| BINDINGS FOR PY | JS        | YES       | NO                   | YES
+| Quantum qiskit              | NO        | YES                  | NO
+| Commonjs & typscript        | YES       | YES                  | YES
+| Inspect (-inspect)          | NO        | NO                   | YES
+| Bindings, py,js,c++         | YES       | YES       		 | YES
 
 # Symmetric encryption
 
@@ -115,13 +115,15 @@ a) Go into the production folder and execute the package help dialog.
 	Response:
 	Usage: ncc <cmd> <opts>
  
-Commands:
-build <input-file> [opts]
+Commands
+	build <input-file> [opts]
 
 run <input-file> [opts]
-  		cache clean|dir|size
-  		help
-  		version
+
+	cache clean | dir | size
+  	help
+  	version
+
 **Usage**
 First you develop your nodejs application as before. You also can use the rb_engine to execute your developer code or the required nodejs version. 
 
