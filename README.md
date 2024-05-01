@@ -64,7 +64,7 @@ To offer our own hardware and better place for sharing our ideas with new and ex
 
 | Runtime   | Filesize    | Packager | Encryptor | Version
 | --------- | ----------- | -------- | --------- | ------- 
-| Nodejs    | 2500 MB DEV | NO       | NO        | 21
+| Nodejs    | 2500 MB DEV | NO       | NO        | 21
 | Nodejs    | 155 MB PRO  | NO       | NO        | 21
 | RB-Engine | 23 MB       | YES      | YES       | 21
 
@@ -246,8 +246,7 @@ I, Gary Hilgemann, as the support provider, hereby expressly disclaim any and al
 
 Users are solely responsible for their own actions and decisions based on the support received. Users are advised to independently verify and validate all information provided and to exercise prudence and caution when implementing any suggestions or recommendations.
 
-By utilizing the support offered through this platform, users acknowledge that they waive any claims against [your name] and understand that they do so at their own risk.
-
+d
 This disclaimer is subject to change without notice. Please check it regularly for updates.
 
 
