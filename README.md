@@ -102,9 +102,7 @@ Yes, every symmetric or a-symetric encryption is breakable. To break the encrypt
 
 This project demonstrates the capabilities of the RB-Engine with built in encryption and decryption. Encryption and security can be a very complex topic, and if you are not sure about to use these tools, please contact us to get support.
 
-Nodejs itself does not support anything in this area at the moment. There are several programs that allow you to pack a single Nodejs into tons of pkg files, ending up with not a single and compact firmware, which is our focus with this research project. If you need stronger encryption method, we offer hardware crypto chip solutions on our carrier boards as well with our memory license server you can inject on the file the required applications from an 2 factor services. This required an enterprise license.
-
-GUSTAV-I3 and GUSTAV I7 with hardware encryption support.
+Nodejs itself does not support anything in this area at the moment. There are several programs that allow you to pack a single Nodejs into tons of pkg files, ending up with not a single and compact firmware, which is our focus with this research project. If you need stronger encryption method, we offer hardware crypto chip solutions on our carrier boards as well with our memory license server you can inject on the file the required applications from an 2 factor services. 
 
 # App packager
 The App packager is an MIT-based OpenSource application that allows you to pack your entire Nodejs application(s) into a single file. It does not yet use the file encryption method and we have no plans to add an encrypted version to this module.
@@ -164,14 +162,14 @@ When you open the index.img you see that this file is now encrypted as a single 
 	cat dist_hellow/index.img
   JJlumcATabMo/OPAg5aJz7QeqnHNvHbxnjWog0XdFBogG…..
 
-# Hardware Encryption and signature (enterprise level yet):
+# Hardware Encryption (enterprise):
 RB-Engine in combination with GUSTAV-I3 and I7 support another encryption level that supports hardware crypto chips that we installed on the carrier board. In combination with the embedded GPU and the hardware crypto chip, you can sign application per device and bind every application to it.
 
 <p align="center">
 <a href="https://rebotnix.com" _target="_blank" ><img src="https://github.com/rebotnix/RB-Engine/assets/566761/7d64f926-f0ce-4b26-bb46-00e7f3519a56"/></a>
 </p>
 
-# In memory license server (only for enterprise)
+# In memory license server (enterprise)
 
 You can use this feature to load an encrypted nodejs-based application that you have previously packed with the App packager. 
 The signature of the file contains different types of challenge response codes and data pipelines. The pipelines to receive a challenge response code are e-mail, SMS and VPN (virtual private network) support. The storage support can load and inject signed code or a key file to open the boot image. 
