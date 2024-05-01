@@ -110,7 +110,9 @@ GUSTAV-I3 and GUSTAV I7 with hardware encryption support.
 The App packager is an MIT-based OpenSource application that allows you to pack your entire Nodejs application(s) into a single file. It does not yet use the file encryption method and we have no plans to add an encrypted version to this module.
 
 To see the options, execute it (please note that rb_engine has added the version in its file name)
+
 a) Go into the production folder and execute the package help dialog.
+
 	./rb_engine packager/dist/ncc/cli.js -h
 	Response:
 	Usage: ncc <cmd> <opts>
@@ -126,13 +128,16 @@ run <input-file> [opts]
 First you develop your nodejs application as before. You also can use the rb_engine to execute your developer code or the required nodejs version. 
 
 **Example**
+
 Let us create a hello world simple js app.
 let hello = “hello rb-engine”
 console.log(hello)
 
 Save this as file as hellow.js and try to execute this file with:
-Output is
-./rb_engine  hellow.js
+	./rb_engine  hellow.js
+
+**Output**
+
 hello rb-engine
 
 Now pack this hellow.js to a single application with the app packager:
@@ -144,9 +149,10 @@ You can test the packing code with:
 ./rb_engine dist_hellow/hello.js
 
 # App encryptor
-To use the app encryptor, it is necessary that you before have packed the file with the file packager to one single file. 
 
-Now to encrypt and generate an img file,  you can execute (execute it from the production folder)
+To use the app encryptor, it is necessary that you before have packed the file with the app packager to one single file. 
+
+Now to encrypt and generate an img file, you can execute (execute it from the production folder)
 
 ./rb_engine encryptor encryptor/encryptor.img dist_hellow/index.js dist_hellow/index.img
 
@@ -167,7 +173,7 @@ RB-Engine in combination with GUSTAV-I3 and I7 support another encryption level 
 
 # In memory license server (only for enterprise)
 
-You can use this feature to load an encrypted nodejs-based application that you have previously packed with the File Packager. 
+You can use this feature to load an encrypted nodejs-based application that you have previously packed with the App packager. 
 The signature of the file contains different types of challenge response codes and data pipelines. The pipelines to receive a challenge response code are e-mail, SMS and VPN (virtual private network) support. The storage support can load and inject signed code or a key file to open the boot image. 
 
 The file is transferred exclusively via secure https. The storage license server is a REBOTNIX Enterprise product that you do not necessarily need to create and run your own application.
@@ -176,10 +182,10 @@ The file is transferred exclusively via secure https. The storage license server
 The first version of rb_engine_a64_tegra_5.10.120 supports the ARM64 architecture, based on Linux ubuntu 22.xx or higher.
 
 The system requirements:
+
 Linux 5.10.120-tegra #1 SMP PREEMPT Tue Aug 1 12:32:50 PDT 2023 aarch64 GNU/Linux
 NVIDIA Jetson Orin AGX 32 oder 64 GB
 Jetson Orin NX with Linux 5.1.20.120 will tested soon
-
 
 # Applications
 
@@ -197,7 +203,6 @@ Jetson Orin NX with Linux 5.1.20.120 will tested soon
 **Voice Assistant Applications**
 **Gaming Applications**
 
-
 #Requirements:
 RB-Engine was developed as a static binary, you can execute it directly form one folder. The compiled binary supports
 only ARCH64 (ARM) 
@@ -212,10 +217,32 @@ uname -a
 **Linux gustavagx64 5.10.120-tegra #1 SMP PREEMPT Tue Aug 1 12:32:50 PDT 2023 aarch64 aarch64 aarch64 GNU/Linux**
 
 Note:
-If you do not use kernel 5.10.120 or higher, you will get an GLIB-C error, cause this kernel is just to old.
+If you do not use kernel 5.10.120 or higher, you will get an GLIB-C error, cause this kernel is just too old.
 
 # Examples
 Please take a look at the example folder to start some demos.
+
+# Download
+Please go to the release section and download the binary package.
+
+# Sourcecode
+We will release the full source code by end of june 2024.
+
+# License
+MIT, see license.txt
+
+# Disclaimer
+
+Please note that any support provided through this platform, text, upload packages, data loss, including but not limited to technical support, advice and guidance, is provided without warranties or guarantees of any kind, either express or implied.
+
+I, Gary Hilgemann, as the support provider, hereby expressly disclaim any and all liability for any direct, indirect, incidental, special or consequential damages arising out of the use or misuse of the information or support provided.
+
+Users are solely responsible for their own actions and decisions based on the support received. Users are advised to independently verify and validate all information provided and to exercise prudence and caution when implementing any suggestions or recommendations.
+
+By utilizing the support offered through this platform, users acknowledge that they waive any claims against [your name] and understand that they do so at their own risk.
+
+This disclaimer is subject to change without notice. Please check it regularly for updates.
+
 
 ## Citation
 
