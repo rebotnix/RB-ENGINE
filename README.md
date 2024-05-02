@@ -75,16 +75,16 @@ We offer a free standard version, a hardware-encrypted version and an enterprise
 | Feature                     | RB-Engine | RB-Engine Enterprise | Nodejs  
 | --------------------------  | --------- | -------------------- | ------- 
 | Memory license server       | NO        | YES                  | NO
-| Symmetric encryption        | YES       | YES                  | NO
-| App packager                | YES       | YES                  | YES
+| Symmetric encryption        | YES       | YES                  | NO
+| App packager                | YES       | YES                  | YES
 | App encryptor               | YES       | YES                  | NO
-| Hardware encryption         | NO        | YES                  | NO
-| Static Binary               | YES       | YES                  | NO
-| Opensource                  | YES       | YES                  | YES
-| Quantum qiskit              | NO        | YES                  | NO
-| Commonjs & typscript        | YES       | YES                  | YES
-| Inspect (-inspect)          | NO        | NO                   | YES
-| Bindings, py,js,c++         | YES       | YES       		 | YES
+| Hardware encryption         | NO        | YES                  | NO
+| Static Binary               | YES       | YES                  | NO
+| Opensource                  | YES       | YES                  | YES
+| Quantum qiskit              | NO        | YES                  | NO
+| Commonjs & typscript        | YES       | YES                  | YES
+| Inspect (-inspect)          | NO        | NO                   | YES
+| Bindings, py,js,c++         | YES       | YES       		 | YES
 
 # Symmetric encryption
 
@@ -158,7 +158,10 @@ Now to encrypt and generate an img file, you can execute (execute it from the pr
 
 To execute the created image, you can now use the rb_engine to execute the file.
 
+<code>
 ../rb_engine dist_hellow/index.img
+</code>
+
 
 When you open the index.img you see that this file is now encrypted as a single image container.
 	cat dist_hellow/index.img
@@ -190,17 +193,29 @@ Jetson Orin NX with Linux 5.1.20.120 will tested soon
 # Applications
 
 **Web Server**
+
 **Real-Time Communication**
+
 **API Middleware**
+
 **Internet of Things (IoT)**
+
 **Data Processing and Streaming**
+
 **Desktop Applications**
+
 **Microservices Architecture**
+
 **Serverless Computing**
+
 **DevOps**
+
 **Data Science and Machine Learning**
+
 **Blockchain Development**
+
 **Voice Assistant Applications**
+
 **Gaming Applications**
 
 #Requirements:
@@ -210,6 +225,7 @@ only ARCH64 (ARM)
 **Make sure that you have the right linux kernel for your jetson device, that is 5.10.120.** 
 
 You can check this with the command
+
 uname -a
 
 **Supported jetson linux kernels**
