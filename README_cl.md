@@ -12,60 +12,7 @@ opinions and compromise. This reserves the right to limit or block contributors 
 that discourage, exhaust, or otherwise negatively affect other participants.
 
 ** RB-Engine Code lines and language **
----------------------------------------------------------------------------------------
-Language                             files          blank        comment           code
----------------------------------------------------------------------------------------
-Perl                                   352          29276          25395        1761185
-C++                                   1955         172844         188690        1209869
-C/C++ Header                          3446         137239         291864         653067
-JavaScript                            6396          82750          97643         650858
-Assembly                               323          49396          10191         571825
-C                                     1630          82568          76499         531805
-JSON                                   246             16              0         274635
-HTML                                   751          17750            663         271832
-Markdown                               407          53765              0         200392
-Python                                 410          19073          23692          79431
-TypeScript                             212           6236          28769          51757
-Bourne Shell                           118           8763           8334          43474
-m4                                      36           2716           1461          22532
-make                                   117           2568           1806          17037
-IDL                                     15            801              0           4285
-Rust                                     5             15             11           4072
-CSS                                     16            498             11           2543
-CMake                                   21            523            550           2469
-DOS Batch                               30            146             23           1119
-XHTML                                    4            101             36            834
-Fortran 90                               2             86            268            641
-Starlark                                 3             55             65            607
-PowerShell                              16             22             78            362
-WiX source                               1             51              8            346
-YAML                                    25             23             15            309
-R                                        5             55             52            272
-Lisp                                     2             42             38            258
-Scheme                                   1             13             51            222
-Windows Resource File                    4             48            105            209
-D                                       12              0              0            190
-Bourne Again Shell                       6             45             38            178
-WebAssembly                             20             22             14            167
-SVG                                      5              1              9            154
-vim script                               3             28             30            147
-TOML                                     3             15             31            145
-Windows Module Definition                3              1              7             96
-MSBuild script                           1              0              0             70
-reStructuredText                         2             26             14             66
-WiX string localization                  1             11              3             28
-Fish Shell                               1              5             14             21
-awk                                      1              1             10             18
-CoffeeScript                             1              7              8             14
-Ruby                                     1              4              6             14
-INI                                      1              5              1             13
-JSX                                      1              1              0             11
-XML                                      3              0              0             10
-Dockerfile                               1              3              0             10
-sed                                      1              0              0              6
----------------------------------------------------------------------------------------
-SUM:                                 16616         667614         756503        6359605
----------------------------------------------------------------------------------------
+![rb_engine_p1_opensource_now](https://github.com/rebotnix/RB-ENGINE/assets/566761/a36da95f-c1fa-452b-a160-79a3d4496ad4)
 
 
 
