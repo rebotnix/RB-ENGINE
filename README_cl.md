@@ -12,6 +12,7 @@ opinions and compromise. This reserves the right to limit or block contributors 
 that discourage, exhaust, or otherwise negatively affect other participants.
 
 ** RB-Engine Code lines and language **
+
 ![rb_engine_p1_opensource_now](https://github.com/rebotnix/RB-ENGINE/assets/566761/a36da95f-c1fa-452b-a160-79a3d4496ad4)
 
 
